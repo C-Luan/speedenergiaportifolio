@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme:
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 111, 23, 23)),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       home: const Landingpage(),
     );
