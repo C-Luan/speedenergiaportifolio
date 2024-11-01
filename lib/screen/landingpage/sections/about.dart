@@ -12,19 +12,16 @@ class SobreSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
                     width: 500,
-                    child: ListTile(
-                      titleAlignment: ListTileTitleAlignment.center,
-                      title: Text('SPEED ENGENHARIA ELETRICA E SOLAR LTDA',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                    ),
+                    child: Text('SPEED ENGENHARIA ELETRICA E SOLAR LTDA\n',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                   ),
                   Text('Endereço',
                       style:
@@ -40,16 +37,16 @@ class SobreSection extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: 500,
-                    child: ListTile(
-                      titleAlignment: ListTileTitleAlignment.center,
-                      title: Text('Sobre nós',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                    ),
+                    child: Text('Sobre nós\n',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                   ),
-                  Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tempor tortor. Vivamus est massa, viverra.',
-                      style: TextStyle(fontWeight: FontWeight.w800)),
+                  SizedBox(
+                    width: 300,
+                    child: Text(
+                        '''Somos especialistas em energia solar, oferecendo soluções sustentáveis que promovem economia e um futuro mais limpo. Nossa equipe é dedicada a fornecer instalações de qualidade e eficiência para cada cliente.''',
+                        style: TextStyle(fontWeight: FontWeight.w300)),
+                  ),
                 ],
               ),
             ],

@@ -15,35 +15,31 @@ class InicioSection extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage(
-                    'assets/images/header_solar.png',
+                  // borderRadius: BorderRadius.circular(20),
+                  // color: const Color.fromARGB(255, 49, 49, 49)
+                  color: Colors.grey
+                  // image: DecorationImage(
+                  //   fit: BoxFit.cover,
+                  //   image: AssetImage(
+                  //     'assets/body/background.png',
+                  //   ),
+                  // ),
+                  // shape: BoxShape.rectangle,
                   ),
-                ),
-                // shape: BoxShape.rectangle,
-              ),
-              height: 600,
-              width: MediaQuery.of(context).size.width * .9,
+              height: height - 50,
+              width: MediaQuery.of(context).size.width,
               child: Center(
-                child: ListTile(
-                  title: Text(
-                    'Speed Energia',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 26,
-                        fontWeight: FontWeight.w700),
-                  ),
-                  subtitle: Text(
-                    'Transformando Sonhos em Energia',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 36,
-                        fontWeight: FontWeight.w700),
+                  child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.contain,
+                    image: AssetImage(
+                      'assets/images/belemtem.png',
+                    ),
                   ),
                 ),
-              ),
+              )),
             )
           ],
         ),

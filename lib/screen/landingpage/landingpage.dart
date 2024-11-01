@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:speedenergiaportifolio/screen/landingpage/sections/parceiros.dart';
 
 import '../../widgets/appbar/home/menu_bar.dart';
 import 'sections/about.dart';
@@ -42,23 +43,33 @@ class _LandingpageState extends State<Landingpage> {
         controller: scrollcontroller,
         child: Column(
           children: [
-            MenuBarHome(
-              onMenuClick: _onMenuClick,
-            ),
             Stack(
               alignment: AlignmentDirectional.bottomCenter,
               children: [
-                InicioSection(key: inicioSectionController, height: 650),
+                InicioSection(key: inicioSectionController, height: 850),
+                Positioned(
+                  top: 10,
+                  child: SizedBox(
+                    width: 1800,
+                    child: MenuBarHome(
+                      onMenuClick: _onMenuClick,
+                    ),
+                  ),
+                ),
                 Positioned(
                   bottom: 10,
                   child: ValoresSection(
-                    height: 100,
+                    height: 150,
                     key: valoresSectionController,
                   ),
                 )
               ],
             ),
             ServicosPrestados(key: servicosSectionController, height: 400),
+            PerceirosSections(height: 800),
+            SizedBox(
+              height: 40,
+            ),
             TestemunhosSections(key: feedbackSectionController, height: 400),
             SobreSection(key: sobreSectionController, height: 300)
           ],

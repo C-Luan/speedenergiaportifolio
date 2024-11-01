@@ -12,20 +12,25 @@ class ValoresSection extends StatelessWidget {
       start: 0.6,
       end: 0.6,
       child: Card(
-        elevation: 10,
+        elevation: 20,
         color: Colors.transparent,
         shadowColor: Colors.transparent,
         child: SizedBox(
-          width: 1000,
+          width: 1200,
           height: height,
           child: Row(
             children: [
               Flexible(
                 child: ListTile(
                   tileColor: Colors.transparent,
-                  title: Text('Missão'),
+                  title: Text(
+                    'Visão\n',
+                    style: TextStyle(color: Colors.black, fontSize: 22),
+                  ),
                   subtitle: Text(
-                      'Loren epsum Loren epsum Loren epsum Loren epsumLoren epsum Loren epsum'),
+                    'Ser líder em energia limpa, promovendo economia e sustentabilidade para nossos clientes.',
+                    style: TextStyle(color: Colors.black, fontSize: 14),
+                  ),
                 ),
               ),
               Padding(
@@ -35,9 +40,14 @@ class ValoresSection extends StatelessWidget {
               Flexible(
                 child: ListTile(
                   tileColor: Colors.transparent,
-                  title: Text('Visão'),
+                  title: Text(
+                    'Missão\n',
+                    style: TextStyle(color: Colors.black, fontSize: 22),
+                  ),
                   subtitle: Text(
-                      'Loren epsum Loren epsum Loren epsum Loren epsumLoren epsum Loren epsum'),
+                    'Oferecer soluções sustentáveis em energia solar com qualidade e confiança.',
+                    style: TextStyle(color: Colors.black, fontSize: 14),
+                  ),
                 ),
               ),
               Padding(
@@ -47,9 +57,14 @@ class ValoresSection extends StatelessWidget {
               Flexible(
                 child: ListTile(
                   tileColor: Colors.transparent,
-                  title: Text('Valores'),
+                  title: Text(
+                    'Valores\n',
+                    style: TextStyle(color: Colors.black, fontSize: 22),
+                  ),
                   subtitle: Text(
-                      'Loren epsum Loren epsum Loren epsum Loren epsumLoren epsum Loren epsum'),
+                    'Compromisso ambiental, inovação, qualidade e transparência.',
+                    style: TextStyle(color: Colors.black, fontSize: 14),
+                  ),
                 ),
               ),
             ],
