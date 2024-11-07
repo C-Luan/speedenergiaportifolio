@@ -12,7 +12,7 @@ class MenuBarHome extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Image(
-              height: 100,
+              height: 75,
               image: AssetImage(
                 'assets/logo/logo-sem-fundo.png',
               )),
@@ -22,29 +22,34 @@ class MenuBarHome extends StatelessWidget {
                 onPressed: () => onMenuClick(1),
                 child: const Text(
                   'Início',
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
               TextButton(
                 onPressed: () => onMenuClick(2),
                 child: const Text(
+                  style: TextStyle(color: Colors.white),
                   'Valores',
                 ),
               ),
               TextButton(
                 onPressed: () => onMenuClick(3),
                 child: const Text(
+                  style: TextStyle(color: Colors.white),
                   'Serviços',
                 ),
               ),
               TextButton(
                 onPressed: () => onMenuClick(4),
                 child: const Text(
+                  style: TextStyle(color: Colors.white),
                   'Feedback',
                 ),
               ),
               TextButton(
                 onPressed: () => onMenuClick(5),
                 child: const Text(
+                  style: TextStyle(color: Colors.white),
                   'about',
                 ),
               ),

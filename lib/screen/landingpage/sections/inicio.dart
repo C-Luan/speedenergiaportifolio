@@ -15,27 +15,19 @@ class InicioSection extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.circular(20),
-                  // color: const Color.fromARGB(255, 49, 49, 49)
+
                   color: Colors.grey
-                  // image: DecorationImage(
-                  //   fit: BoxFit.cover,
-                  //   image: AssetImage(
-                  //     'assets/body/background.png',
-                  //   ),
-                  // ),
-                  // shape: BoxShape.rectangle,
+
                   ),
               height: height - 50,
               width: MediaQuery.of(context).size.width,
               child: Center(
                   child: Container(
-                height: 200,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    fit: BoxFit.contain,
+                    fit: BoxFit.cover,
                     image: AssetImage(
-                      'assets/images/belemtem.png',
+                      'assets/images/promocioanl.png',
                     ),
                   ),
                 ),

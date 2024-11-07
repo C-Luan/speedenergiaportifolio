@@ -50,7 +50,7 @@ class _LandingpageState extends State<Landingpage> {
                 Positioned(
                   top: 10,
                   child: SizedBox(
-                    width: 1800,
+                    width: MediaQuery.of(context).size.width * .8,
                     child: MenuBarHome(
                       onMenuClick: _onMenuClick,
                     ),
@@ -65,7 +65,13 @@ class _LandingpageState extends State<Landingpage> {
                 )
               ],
             ),
-            ServicosPrestados(key: servicosSectionController, height: 400),
+            SizedBox(
+              height: 40,
+            ),
+            ServicosPrestados(key: servicosSectionController, height: 500),
+            SizedBox(
+              height: 40,
+            ),
             PerceirosSections(height: 800),
             SizedBox(
               height: 40,

@@ -8,50 +8,67 @@ class ServicosPrestados extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-          child: Text(
-            'Nossos Serviços',
-            style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
-          ),
-        ),
         Scrollbar(
           controller: scrollController,
           interactive: true,
           child: SingleChildScrollView(
+            controller: scrollController,
             scrollDirection: Axis.horizontal,
             child: SizedBox(
               height: height,
-              width: 1200,
+              width: 1600,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   SizedBox(
-                    width: 300,
-                    height: 250,
-                    child: Card(
-                      child: _cardServico(
-                        title: 'LorenEpsun',
-                        subtitle: 'Loren Epsun',
+                    width: 400,
+                    height: 490,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        // borderRadius: BorderRadius.circular(23),
+                        image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/carroucel/1.JPG'),
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    width: 300,
-                    height: 250,
-                    child: Card(
-                      child: _cardServico(
-                        title: 'LorenEpsun',
-                        subtitle: 'Loren Epsun',
+                    width: 400,
+                    height: 490,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        // borderRadius: BorderRadius.circular(23),
+                        image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/carroucel/2.JPG'),
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    width: 300,
-                    height: 250,
-                    child: Card(
-                      child: _cardServico(
-                        title: 'LorenEpsun',
-                        subtitle: 'Loren Epsun',
+                    width: 400,
+                    height: 490,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        // borderRadius: BorderRadius.circular(23),
+                        image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/carroucel/3.JPG'),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 400,
+                    height: 490,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        // borderRadius: BorderRadius.circular(23),
+                        image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/carroucel/4.JPG'),
+                        ),
                       ),
                     ),
                   ),
