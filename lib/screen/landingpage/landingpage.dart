@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:speedenergiaportifolio/screen/landingpage/sections/parceiros.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../widgets/appbar/home/menu_bar.dart';
 import 'sections/about.dart';
@@ -32,13 +34,14 @@ class _LandingpageState extends State<Landingpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.arrow_upward),
-        onPressed: () => scrollcontroller.animateTo(
-          Offset.zero.dy,
-          duration: const Duration(milliseconds: 500),
-          curve: Curves.easeInOut,
-        ),
-      ),
+          backgroundColor: Colors.green,
+          child: const Icon(FontAwesomeIcons.whatsapp),
+          onPressed: () async {
+            if (!await launchUrl(Uri.parse(
+                'https://wa.me/559181602901?text=${Uri.parse('Olá! tenho enteresse em solicitar uma cotação')}'))) {
+              throw Exception('Could not launch ');
+            }
+          }),
       body: SingleChildScrollView(
         controller: scrollcontroller,
         child: Column(
@@ -46,9 +49,9 @@ class _LandingpageState extends State<Landingpage> {
             Stack(
               alignment: AlignmentDirectional.bottomCenter,
               children: [
-                InicioSection(key: inicioSectionController, height: 850),
+                InicioSection(key: inicioSectionController, height: 900),
                 Positioned(
-                  top: 10,
+                  top: 20,
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * .8,
                     child: MenuBarHome(
@@ -57,7 +60,7 @@ class _LandingpageState extends State<Landingpage> {
                   ),
                 ),
                 Positioned(
-                  bottom: 10,
+                  bottom: -20,
                   child: ValoresSection(
                     height: 150,
                     key: valoresSectionController,

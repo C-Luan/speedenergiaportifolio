@@ -14,12 +14,8 @@ class InicioSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              decoration: BoxDecoration(
-
-                  color: Colors.grey
-
-                  ),
-              height: height - 50,
+              decoration: BoxDecoration(color: Colors.grey),
+              height: height,
               width: MediaQuery.of(context).size.width,
               child: Center(
                   child: Container(
@@ -27,7 +23,9 @@ class InicioSection extends StatelessWidget {
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
-                      'assets/images/promocioanl.png',
+                      MediaQuery.of(context).size.width < 1000
+                          ? 'assets/images/background/bgmobile.png'
+                          : 'assets/images/background/bgwide.png',
                     ),
                   ),
                 ),

@@ -17,9 +17,10 @@ class PerceirosSections extends StatelessWidget {
             // color: const Color.fromARGB(255, 49, 49, 49)
             image: DecorationImage(
               fit: BoxFit.cover,
+              // colorFilter: ColorFilter.mode(Colors.white, BlendMode.dstATop),
               filterQuality: FilterQuality.low,
               image: AssetImage(
-                'assets/images/belemtem.png',
+                'assets/images/background/backgroundparceiros.jpeg',
               ),
             ),
             // shape: BoxShape.rectangle,

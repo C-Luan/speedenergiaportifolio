@@ -16,7 +16,7 @@ class ValoresSection extends StatelessWidget {
         color: Colors.transparent,
         shadowColor: Colors.transparent,
         child: SizedBox(
-          width: 1200,
+          width: 1300,
           height: height,
           child: Row(
             children: [
