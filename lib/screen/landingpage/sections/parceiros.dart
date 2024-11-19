@@ -12,15 +12,12 @@ class PerceirosSections extends StatelessWidget {
     return Column(
       children: [
         Container(
-          decoration: BoxDecoration(
-            // borderRadius: BorderRadius.circular(20),
-            // color: const Color.fromARGB(255, 49, 49, 49)
+          decoration: const BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-              // colorFilter: ColorFilter.mode(Colors.white, BlendMode.dstATop),
               filterQuality: FilterQuality.low,
               image: AssetImage(
-                'assets/images/background/backgroundparceiros.jpeg',
+                'assets/images/background/backgroundparceiro.png',
               ),
             ),
             // shape: BoxShape.rectangle,
@@ -36,9 +33,9 @@ class PerceirosSections extends StatelessWidget {
                 height: 600,
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(50.0),
-                      child: const Center(
+                    const Padding(
+                      padding: EdgeInsets.all(50.0),
+                      child: Center(
                         child: Text(
                           'Nossos Parceiros',
                           style: TextStyle(

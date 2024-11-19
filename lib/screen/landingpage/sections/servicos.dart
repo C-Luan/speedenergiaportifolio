@@ -24,9 +24,9 @@ class ServicosPrestados extends StatelessWidget {
                     width: 400,
                     height: 490,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         // borderRadius: BorderRadius.circular(23),
-                        image: const DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage('assets/images/carroucel/1.JPG'),
                         ),
@@ -37,9 +37,9 @@ class ServicosPrestados extends StatelessWidget {
                     width: 400,
                     height: 490,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         // borderRadius: BorderRadius.circular(23),
-                        image: const DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage('assets/images/carroucel/2.JPG'),
                         ),
@@ -50,9 +50,9 @@ class ServicosPrestados extends StatelessWidget {
                     width: 400,
                     height: 490,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         // borderRadius: BorderRadius.circular(23),
-                        image: const DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage('assets/images/carroucel/3.JPG'),
                         ),
@@ -63,9 +63,9 @@ class ServicosPrestados extends StatelessWidget {
                     width: 400,
                     height: 490,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         // borderRadius: BorderRadius.circular(23),
-                        image: const DecorationImage(
+                        image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage('assets/images/carroucel/4.JPG'),
                         ),
@@ -85,7 +85,7 @@ class ServicosPrestados extends StatelessWidget {
     return Stack(
       alignment: AlignmentDirectional.bottomCenter,
       children: [
-        Card(
+        const Card(
           color: Colors.grey,
           child: SizedBox(
             width: 230,

@@ -79,7 +79,7 @@ class _LandingpageState extends State<Landingpage> {
             SizedBox(
               height: 40,
             ),
-            TestemunhosSections(key: feedbackSectionController, height: 400),
+            // TestemunhosSections(key: feedbackSectionController, height: 400),
             SobreSection(key: sobreSectionController, height: 300)
           ],
         ),
